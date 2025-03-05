@@ -1,15 +1,16 @@
-# Simple tutorial for GIS in R
+# Simple Tutorial for GIS in R
  
 This is my project for introducing the basic fundamentals of GIS and how to operate it in R (with R code examples).
+
+# Data Download
 
 - Species data are download from TBN:<br> https://www.tbn.org.tw/ <br>
 - Annual temperature data are download from CHELSA:<br> https://chelsa-climate.org/ <br>
 - Taiwan map is download from Taiwan Government Open Data Platform:<br> https://data.nat.gov.tw/
 
-# R Spatial Data Processing and Visualization
+# R Code Examples
 
 ### Setting environment
-*Please download the dataset from the source mentioned above first.*
 
 ```r
 # Set working directory
@@ -112,7 +113,7 @@ Qg_sf_county = st_join(Qg_sf, Taiwan_4326, left = TRUE)
 mapview(Qg_sf_county)
 ```
 
-### Filter data by spatial location
+### Filter data by geometry
 
 ```r
 # Select specific region (e.g., New Taipei City)
